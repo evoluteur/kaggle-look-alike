@@ -1,0 +1,40 @@
+@import '../variables';
+
+.Table {
+	position: relative;
+	overflow: auto;
+	border-collapse: collapse; 
+	th,
+	td {
+		border: $border;
+		padding: 5px;
+		min-width: 200px;
+		flex: 1 1;
+		overflow: hidden; 
+	}
+	th {
+		font-weight: 700;
+		background-color: $color-background;
+		position: sticky;
+		top: 38px;
+		z-index: 100;
+		border: $border;
+		text-align: left;
+		cursor: pointer;
+		padding: 0;
+		&:hover{
+			color: $color-hover;
+		}
+		> div {
+			padding: 5px;
+			border-bottom: $border
+		}
+	}
+	.rightAlign {
+		text-align: right;
+	}
+	> thead > tr {
+		background-color: $color-background;
+		z-index: 100;
+	}
+}

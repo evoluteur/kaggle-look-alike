@@ -1,0 +1,21 @@
+@import '../variables';
+@import '../variables';
+
+.Bars {
+    position: relative;
+    height: 100px;
+    width: 205px;
+    margin: 5px 0 0;
+    > div {
+        position: absolute;
+        width: 8px;
+        bottom: 0;
+        background-color: #259DCB;
+        border: 1px solid #00838f;
+        &:hover{
+            background-color: rgb(10, 100, 136);
+            border-left-color: white;
+            border-right-color: white;
+        }
+    }
+}
