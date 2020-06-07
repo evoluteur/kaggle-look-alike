@@ -38,3 +38,11 @@
 		z-index: 100;
 	}
 }
+.showMore{
+	margin: 20px;
+	text-align: center;
+	> span {
+		display: block;
+		margin: 10px 0;
+	}
+}

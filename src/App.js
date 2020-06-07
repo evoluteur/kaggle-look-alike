@@ -15,22 +15,26 @@ export default class App extends React.Component {
 		data: null,
 		stats: null,
 		loading: true,
+		showAllRows: false,
 	}
 
 	clickFile = evt => {
 		const selectedIdx = parseInt(evt.currentTarget.id)
+		document.getElementById('DataSpace').scrollTo(0, 0)
 		this.setState({
 			selectedIdx: selectedIdx,
 			data: null,
 			stats: null,
 			loading: true,
+			showAllRows: false,
 			error: null
 		})
 		this.getData(meta[selectedIdx])
 	}
 
 	render() {
-		const idx = this.state.selectedIdx
+		const state = this.state
+		const idx = state.selectedIdx
 		return (
 			<div className="App">
 				<FileList loading={ this.state.loading }  files={ meta } clickFile={this.clickFile} selectedIdx={idx} />
@@ -40,12 +44,14 @@ export default class App extends React.Component {
 					</div>
 				) : (
 					<DataSpace 
-						loading={ this.state.loading } 
+						loading={ state.loading } 
 						metadata={ meta[idx] } 
-						data={ this.state.data } 
-						stats={ this.state.stats } 
+						data={ state.data } 
+						stats={ state.stats } 
 						sortFunc={ this.sortData }
-						lastSort={ this.state.lastSort }
+						lastSort={ state.lastSort }
+						showAllRows={ state.showAllRows }
+						removeSizeLimitFunc={ this.removeSizeLimit }
 					/>
 				)}
 			</div>
@@ -67,6 +73,7 @@ export default class App extends React.Component {
 				data: fullData.data,
 				stats: fullData.stats,
 				loading: false,
+				showAllRows: false,
 				lastSort: '',
 			})
 		}else{
@@ -168,10 +175,10 @@ export default class App extends React.Component {
 			}else{
 				// TODO: other cases
 				comparatorFunc = (a, b) => {
-					if(a[colName]<b[colName]){
+					if(a[colName]>b[colName]){
 						return 1;
 					}
-					if(b[colName]<a[colName]){
+					if(b[colName]>a[colName]){
 						return -1;
 					}
 					return 0;
@@ -180,9 +187,16 @@ export default class App extends React.Component {
 			this.setState({ 
 				data: this.state.data.sort(comparatorFunc),
 				lastSort: colName,
+				showAllRows: false
 			 })
 		}
 
+	}
+
+	removeSizeLimit = () => {
+		this.setState({
+			showAllRows: true
+		})
 	}
 
 }

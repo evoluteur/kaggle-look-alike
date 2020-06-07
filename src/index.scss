@@ -21,6 +21,14 @@ h1, h2, h3 {
   margin-bottom: 10px 0 20px;
 }
 
+.fakeLink {
+  color: $color-selection;
+  cursor: pointer;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
 .hidden {
   display: none;
 }

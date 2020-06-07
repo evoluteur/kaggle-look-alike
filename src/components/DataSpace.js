@@ -29,7 +29,11 @@ export default class DataSpace extends React.Component {
 					: 
 						this.state.view === 'table'
 							?
-							<Table metadata={ metadata } data={ data } stats={ props.stats } sortFunc={ props.sortFunc } lastSort={ props.lastSort } />
+							<Table metadata={ metadata } data={ data } stats={ props.stats } 
+								sortFunc={ props.sortFunc } 
+								removeSizeLimitFunc = { props.removeSizeLimitFunc }
+								showAllRows = { props.showAllRows }
+								lastSort={ props.lastSort } />
 								:
 							<Stats metadata={ metadata } stats={ props.stats } />
 				}
@@ -53,5 +57,7 @@ DataSpace.propTypes = {
 	data: PropTypes.array,
 	stats: PropTypes.object,
 	sortFunc: PropTypes.func.isRequired,
-	lastSort: PropTypes.string
+	removeSizeLimitFunc: PropTypes.func.isRequired,
+	lastSort: PropTypes.string,
+	showAllRows: PropTypes.bool,
 }
