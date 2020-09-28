@@ -2,6 +2,9 @@
 
 Kaggle Data Explorer look-alike.
 
+
+![Data Explorer](https://raw.githubusercontent.com/evoluteur/kaggle-look-alike/master/screenshots/kaggle-look-alike.gif)
+
 ## Running the project
 
 ```bash
