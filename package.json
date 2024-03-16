@@ -1,25 +1,20 @@
 {
   "name": "kaggle-look-alike",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Kaggle Data Explorer look-alike single page app",
-  "copyright": "(c) 2020 Olivier Giulieri",
+  "copyright": "(c) 2024 Olivier Giulieri",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
-  "engines": {
-    "node": "10.16.3",
-    "npm": "6.9.0"
-  },
   "dependencies": {
+    "@material-ui/icons": "^4.11.3",
+    "d3": "^7.9.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1",
-    "node-sass": "^4.14.1",
-    "@material-ui/icons": "^4.9.1",
-    "@material-ui/core": "^4.3.3",
-    "d3": "5.16.0"
+    "react-scripts": "^5.0.1",
+    "sass": "^1.72.0"
   },
   "devDependencies": {
-    "react-dev-utils": "^10.2.1"
+    "react-dev-utils": "^12.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
