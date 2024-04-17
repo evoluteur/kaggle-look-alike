@@ -2,8 +2,11 @@
 
 Kaggle Data Explorer UI look-alike build with React.
 
+Check out the [live demo](https://evoluteur.github.io/kaggle-look-alike/).
 
 ![Data Explorer](https://raw.githubusercontent.com/evoluteur/kaggle-look-alike/master/screenshots/kaggle-look-alike.gif)
+
+This app provides a convenient way to explore and understand your datasets.
 
 ## Running the project
 
