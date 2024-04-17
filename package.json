@@ -1,6 +1,6 @@
 {
   "name": "kaggle-look-alike",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Kaggle Data Explorer look-alike single page app",
   "copyright": "(c) 2024 Olivier Giulieri",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
@@ -14,7 +14,8 @@
     "sass": "^1.72.0"
   },
   "devDependencies": {
-    "react-dev-utils": "^12.0.1"
+    "react-dev-utils": "^12.0.1",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
   "scripts": {
     "start": "react-scripts start",
