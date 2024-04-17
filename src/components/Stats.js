@@ -7,11 +7,11 @@ import "./Stats.scss";
 
 const statNames = ["nulls", "min", "max", "mean", "stdDev"]; //,"total"
 
-const Stats = ({ metadata }) => {
+const Stats = ({ metadata, stats }) => {
   const columns = metadata.columns;
 
   const renderFeature = (col) => {
-    const colStats = this.props.stats[col.name];
+    const colStats = stats[col.name];
     // TODO: handle types below
     if (["string", "date", "time", "timestamp"].includes(col.type)) {
       return (
