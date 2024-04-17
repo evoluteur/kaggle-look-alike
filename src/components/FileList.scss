@@ -1,27 +1,30 @@
-@import '../variables';
+@import "../variables";
 
 .FileList {
-	padding: 10px 0 10px 20px;
-	> div:not(.fTitle) {
-		padding: 3px 10px;
-		border-left: 3px solid silver;
-		margin: 3px 0;
-		cursor: pointer;
-		&:hover {
-			color: $color-hover;
-			border-color: $color-hover;
-		}
-		&.selected {
-			color: $color-selection;
-			border-color: $color-selection;
-		}
-	}
-	.dataExplo {
-		font-weight: 700;
-		margin: 5px 0 15px;
-	}
-	.fileCount {
-		margin-bottom: 20px;
-		color: $color-text-minor;
-	}
+  padding: 10px 0 10px 20px;
+  > div:not(.fTitle) {
+    padding: 3px 10px;
+    border-left: 3px solid silver;
+    margin: 3px 0;
+    cursor: pointer;
+    &:hover {
+      color: $color-hover;
+      border-color: $color-hover;
+    }
+    &.selected {
+      color: $color-selection;
+      border-color: $color-selection;
+    }
+  }
+  .dataExplo {
+    font-weight: 700;
+    margin: 5px 0 15px;
+  }
+  .fileCount {
+    margin-bottom: 20px;
+    color: $color-text-minor;
+  }
+  .iframe {
+    margin-top: 30px;
+  }
 }
