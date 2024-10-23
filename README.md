@@ -1,4 +1,4 @@
-# Kaggle-look-alike
+# Kaggle-look-alike  &middot; [![GitHub license](https://img.shields.io/github/license/evoluteur/kaggle-look-alike)](https://github.com/evoluteur/kaggle-look-alike/blob/main/LICENSE.md) [![npm version](https://img.shields.io/npm/v/kaggle-look-alike)](https://www.npmjs.com/package/kaggle-look-alike)
 
 Kaggle Data Explorer UI look-alike build with React.
 
