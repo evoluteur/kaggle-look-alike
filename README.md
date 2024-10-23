@@ -24,4 +24,6 @@ In a web browser, go to the url [http://localhost:3000/](http://localhost:3000/)
 
 Kaggle-look-alike is Open Source at [GitHub](https://github.com/evoluteur/kaggle-look-alike) with MIT license.
 
+Encourage Kaggle-Look-Alike by [becoming a sponsor](https://github.com/sponsors/evoluteur).
+
 (c) 2024 [Olivier Giulieri](https://evoluteur.github.io/)
