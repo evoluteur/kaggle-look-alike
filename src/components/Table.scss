@@ -4,6 +4,11 @@
   position: relative;
   overflow: auto;
   border-collapse: collapse;
+  margin-bottom: 20px;
+  > tbody {
+    font-family: monospace;
+    font-size: 12px;
+  }
   th,
   td {
     border: $border;
@@ -11,12 +16,13 @@
     min-width: 200px;
     flex: 1 1;
     overflow: hidden;
+    padding: 8px 12px;
   }
   th {
     font-weight: 700;
     background-color: $color-background;
     position: sticky;
-    top: 38px;
+    top: 55px;
     z-index: 100;
     border: $border;
     text-align: left;
@@ -26,7 +32,7 @@
       color: $color-hover;
     }
     > div {
-      padding: 5px;
+      padding: 8px 12px;
       border-bottom: $border;
     }
   }

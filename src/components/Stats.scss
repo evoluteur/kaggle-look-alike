@@ -6,6 +6,8 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
+  padding-right: 5px;
+  margin-bottom: 20px;
   > div {
     flex-grow: 1;
     position: relative;

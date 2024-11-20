@@ -21,6 +21,7 @@ npm start
 
 In a web browser, go to the url [http://localhost:3000/](http://localhost:3000/).
 
+Notes: This project was mostly done in 2020 so it is missing some of the UI changes that Kaggle added since.
 
 Kaggle-look-alike is Open Source at [GitHub](https://github.com/evoluteur/kaggle-look-alike) with MIT license.
 

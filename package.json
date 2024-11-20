@@ -5,6 +5,8 @@
   "copyright": "(c) 2024 Olivier Giulieri",
   "author": "Olivier Giulieri (https://evoluteur.github.io/)",
   "license": "MIT",
+  "repository": "github:evoluteur/kaggle-look-alike",
+  "homepage": "https://evoluteur.github.io/kaggle-look-alike/",
   "dependencies": {
     "@material-ui/icons": "^4.11.3",
     "d3": "^7.9.0",

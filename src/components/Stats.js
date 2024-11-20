@@ -40,7 +40,6 @@ const Stats = ({ metadata, stats }) => {
           {renderFeature(c)}
         </div>
       ))}
-      <span className="clearer"></span>
     </div>
   );
 };
