@@ -1,3 +1,0 @@
-Data Explorer
-
-This is the take home assignment for UI engineer at Tecton by Olivier Giulieri.

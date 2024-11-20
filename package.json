@@ -41,11 +41,13 @@
     "not op_mini all"
   ],
   "keywords": [
+    "kaggle",
     "data",
+    "data-science",
+    "data-mining",
+    "data-analysis",
     "table",
     "histogram",
-    "kaggle",
-    "clone",
     "data-exploration"
   ]
 }
